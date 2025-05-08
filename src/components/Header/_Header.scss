@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9fc;
+  height: 3rem;
+  width: 100%;
+  z-index: 3;
+}
+.city-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: auto;
+}
+
+.city-logo {
+  width: 2.25rem;
+  height: auto;
+  z-index: 2;
+}
+
+.city-div p {
+  margin: 0;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+
+.search-icon {
+  height: 100%;
+}
