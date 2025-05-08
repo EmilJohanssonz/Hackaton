@@ -1,6 +1,6 @@
 
 
-const FöretagPage = () => {
+const EnterprisePage = () => {
   return (
     <div>
       <h1>Företag</h1>
@@ -9,4 +9,4 @@ const FöretagPage = () => {
   );
 }
 
-export default FöretagPage;
+export default EnterprisePage;
