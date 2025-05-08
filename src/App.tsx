@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css'
+import StartPage from './pages/StartPage';
+import HomePage from './pages/HomePage';
+import UtbildningPage from './pages/Utbildning';
+import VårdHälsaPage from './pages/Vård&Hälsa';
+import ShoppingPage from './pages/Shopping';
+import ResturangPage from './pages/Restaurang';
+import EventPage from './pages/Event';
+import LokaliztionPage from './pages/LokalizationPage';
+import FöretagPage from './pages/Företag';
+import RootLayout from './components/layout/rootlayout';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <StartPage /> },
+      { path: "home", element: <HomePage /> },
+      { path: "utbildning", element: <UtbildningPage /> },
+      { path: "vård/hälsa", element: <VårdHälsaPage /> },
+      { path: "shopping", element: <ShoppingPage /> },
+      { path: "resturanger/cafe", element: <ResturangPage /> },
+      { path: "event", element: <EventPage /> },
+      { path: "karta", element: <LokaliztionPage /> },
+      { path: "företag", element: <FöretagPage /> },
+    ],
+  },
+]);
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
 export default App
