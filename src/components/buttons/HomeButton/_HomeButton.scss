@@ -1,0 +1,21 @@
+@mixin homebutton-base {
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.homebutton-colored {
+  @include homebutton-base;
+  background-color: #c2272d;
+  border: none;
+  color: white;
+}
+
+.homebutton-unColored {
+  @include homebutton-base;
+  background-color: transparent;
+  border: 1px solid #c2272d;
+  color: #c2272d;
+}
