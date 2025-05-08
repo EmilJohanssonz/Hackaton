@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.startpage {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  background-image: url("Skärmbild 2025-05-08 184325.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.startpage {
+  .imgLayer {
+    z-index: 1;
+    position: absolute;
+  }
+
+  .icon,
+  .title {
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: all .6s ease-out;
+  }
+
+  .icon.show,
+  .title.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .icon {
+    background-color: white;
+    position: relative;
+    width: 350px;
+    height: 500px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    bottom: 120px;
+    position: relative;
+
+    .stad {
+      letter-spacing: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      padding-left: 8px;
+    }
+  }
+}

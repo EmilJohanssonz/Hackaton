@@ -1,16 +1,15 @@
-
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './App.css'
-import StartPage from './pages/StartPage';
-import HomePage from './pages/HomePage';
-import UtbildningPage from './pages/Utbildning';
-import VårdHälsaPage from './pages/Vård&Hälsa';
-import ShoppingPage from './pages/Shopping';
-import ResturangPage from './pages/Restaurang';
-import EventPage from './pages/Event';
-import LokaliztionPage from './pages/LokalizationPage';
-import FöretagPage from './pages/Företag';
-import RootLayout from './components/layout/rootlayout';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./App.css";
+import StartPage from "./pages/StartPage";
+import HomePage from "./pages/HomePage";
+import UtbildningPage from "./pages/Utbildning";
+import VårdHälsaPage from "./pages/Vård&Hälsa";
+import ShoppingPage from "./pages/Shopping";
+import ResturangPage from "./pages/Restaurang";
+import EventPage from "./pages/Event";
+import LokaliztionPage from "./pages/LokalizationPage";
+import FöretagPage from "./pages/Företag";
+import RootLayout from "./components/layout/rootlayout";
 
 const router = createBrowserRouter([
   {
@@ -31,12 +30,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-
   return (
     <>
-      <RouterProvider router={router} />
+        <RouterProvider router={router} />
     </>
   );
 }
 
-export default App
+export default App;
