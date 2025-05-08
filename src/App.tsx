@@ -1,4 +1,3 @@
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css'
 import StartPage from './pages/StartPage';
@@ -31,12 +30,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-
   return (
     <>
-      <RouterProvider router={router} />
+        <RouterProvider router={router} />
     </>
   );
 }
 
-export default App
+export default App;
