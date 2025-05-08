@@ -1,6 +1,6 @@
 
 
-const VårdHälsaPage = () => {
+const HealthcarePage = () => {
   return (
     <div>
       <h1>Vård och Hälsa</h1>
@@ -8,4 +8,4 @@ const VårdHälsaPage = () => {
     </div>
   )
 }
-  export default VårdHälsaPage;
+export default HealthcarePage;
