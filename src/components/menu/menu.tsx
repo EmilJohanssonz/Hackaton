@@ -35,7 +35,7 @@ export default function Menu({ onMenuToggle, isOpen }: MenuProps) {
         <ul>
           <li>
             <NavLink
-              to="/home"
+              to="/"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               Hem
