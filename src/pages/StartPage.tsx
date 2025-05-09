@@ -62,10 +62,7 @@ const StartPage = () => {
               alt={currentCity.title}
             />
           </div>
-          <div className={`title ${showImage ? "show" : ""}`}>
-            <h2>{currentCity.title}</h2>
-            <h4 className="stad">{currentCity.subtitle}</h4>
-          </div>
+          
         </div>
 
         <div className={`textStad ${showText ? "show" : ""}`}>
