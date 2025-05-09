@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './App.css'
+import './App.css';
 import StartPage from './pages/StartPage';
 import HomePage from './pages/HomePage';
 import HealthcarePage from './pages/HealthcarePage';
@@ -9,22 +9,24 @@ import LokaliztionPage from './pages/LokalizationPage';
 import RootLayout from './components/layout/rootlayout';
 import RestaurantPage from './pages/RestaurantPage';
 import EnterprisePage from './pages/EnterprisePage';
-import EducationPage from './pages/educationPage';
+import EducationPage from './pages/EducationPage';
+import NewsPage from './pages/NewsPage';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <RootLayout />,
     children: [
       { index: true, element: <StartPage /> },
-      { path: "home", element: <HomePage /> },
-      { path: "education", element: <EducationPage /> },
-      { path: "healthcare", element: <HealthcarePage /> },
-      { path: "shopping", element: <ShoppingPage /> },
-      { path: "restaurants/cafe", element: <RestaurantPage /> },
-      { path: "event", element: <EventPage /> },
-      { path: "map", element: <LokaliztionPage /> },
-      { path: "enterprise", element: <EnterprisePage /> },
+      { path: 'home', element: <HomePage /> },
+      { path: 'education', element: <EducationPage /> },
+      { path: 'healthcare', element: <HealthcarePage /> },
+      { path: 'shopping', element: <ShoppingPage /> },
+      { path: 'restaurants/cafe', element: <RestaurantPage /> },
+      { path: 'event', element: <EventPage /> },
+      { path: 'map', element: <LokaliztionPage /> },
+      { path: 'enterprise', element: <EnterprisePage /> },
+      { path: 'news', element: <NewsPage /> },
     ],
   },
 ]);
@@ -32,7 +34,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </>
   );
 }

@@ -1,6 +1,6 @@
-import "./_Header.scss";
-import logoHeader from "../../assets/Skarmbild_2025-05-07_160140.png";
-import Menu from "../menu/menu";
+import './_Header.scss';
+import Menu from '../menu/menu';
+
 export default function Header() {
   return (
     <header>
@@ -8,14 +8,18 @@ export default function Header() {
         <Menu />
       </div>
       <div className="city-div">
-        <img className="city-logo" src={logoHeader} alt="" />
+        <img
+          className="city-logo"
+          src="/Skarmbild_2025-05-07_160140.png"
+          alt="Borås logo"
+        />
         <p>Bara i Borås</p>
       </div>
       <div>
         <img
           className="search-icon"
           src="https://img.icons8.com/ios7/600/search.png"
-          alt=""
+          alt="sök ikon"
         />
       </div>
     </header>

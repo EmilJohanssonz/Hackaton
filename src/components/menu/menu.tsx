@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import "./_menu.scss";
-import { useState } from "react";
+import { Link } from 'react-router-dom';
+import './_menu.scss';
+import { useState } from 'react';
 
 export default function Menu() {
   const [open, setOpen] = useState(false);
@@ -16,10 +16,13 @@ export default function Menu() {
 
       {open && <div className="overlay" onClick={() => setOpen(false)}></div>}
 
-      <nav className={`side-menu ${open ? "open" : ""}`}>
+      <nav className={`side-menu ${open ? 'open' : ''}`}>
         <ul>
           <li>
             <Link to="/home">Hem</Link>
+          </li>
+          <li>
+            <Link to="/news">Nyheter</Link>
           </li>
           <li>
             <Link to="/event">Evenemang</Link>
