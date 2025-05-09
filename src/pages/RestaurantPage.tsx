@@ -1,5 +1,6 @@
 import React from 'react';
 import './RestaurantPage.css';
+import Footer from '../components/layout/Nav';
 
 const RestaurantPage = () => {
   return (
@@ -62,6 +63,8 @@ const RestaurantPage = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
