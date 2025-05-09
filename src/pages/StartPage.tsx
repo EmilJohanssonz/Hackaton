@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import NewsSection from "../components/news/NewsSection";
 import "../components/startpage/StartPage.scss";
+import NewsPage from "../components/newspage/newspage";
 
 const StartPage = () => {
   const [showImage, setShowImage] = useState(false);
@@ -92,7 +93,7 @@ const StartPage = () => {
         </div>
       </div>
       <div className={`news-section-wrapper ${showNews ? "show" : ""}`}>
-        <NewsSection />
+        <NewsPage />
       </div>
     </>
   );
