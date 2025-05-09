@@ -21,7 +21,9 @@ export default function Menu({ onMenuToggle, isOpen }: MenuProps) {
       <nav className={`side-menu ${isOpen ? "open" : ""}`}>
         <div className="nav-header">
           <div className="nav-city-div">
+
             <img className="city-logo" src="/logo.png" alt="City logo" />
+
             <p>Bara i Borås</p>
           </div>
           <div>

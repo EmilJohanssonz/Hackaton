@@ -1,4 +1,3 @@
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import StartPage from "./pages/StartPage";
@@ -12,7 +11,6 @@ import RestaurantPage from "./pages/RestaurantPage";
 import EnterprisePage from "./pages/EnterprisePage/EnterprisePage";
 import EducationPage from "./pages/EducationPage/EducationPage";
 
-        
 const router = createBrowserRouter([
   {
     path: "/",

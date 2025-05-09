@@ -15,23 +15,25 @@ export default function Header() {
   };
 
   return (
-    <header>
+    <header className="header-container">
       <div className="menu-and-city">
         <Menu onMenuToggle={handleMenuToggle} isOpen={isMenuOpen} />
         <div className={`city-div ${!isHeaderVisible ? "invisible" : ""}`}>
-          <img className="city-logo" src="/logo.png" alt="" />
+          <img className="city-logo" src="/logo.png" alt="Borås logotyp" />
           <p>Bara i Borås</p>
         </div>
       </div>
+
       <div
-        className={`${!isHeaderVisible ? "invisible" : ""} search-icon-container`}
+        className={`${!isHeaderVisible ? "invisible" : ""
+          } search-icon-container`}
       >
         <img
           className="search-icon"
           src="https://img.icons8.com/ios7/600/search.png"
-          alt=""
+          alt="Sök ikon"
         />
-        </div>
+      </div>
     </header>
   );
 }
