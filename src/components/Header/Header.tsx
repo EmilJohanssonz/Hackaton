@@ -34,6 +34,18 @@ export default function Header() {
           src="https://img.icons8.com/ios7/600/search.png"
           alt=""
         />
+    <header className="header-container">
+      <div className="menu-wrapper">
+        <Menu />
+      </div>
+
+      <div className="city-div">
+        <img className="city-logo" src="/logo.png" alt="Borås logotyp" />
+        <p>Bara i Borås</p>
+      </div>
+
+      <div className="search-wrapper">
+        <img className="search-icon" src="/logo.png" alt="Sök ikon" />
       </div>
     </header>
   );

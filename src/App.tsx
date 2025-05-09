@@ -11,6 +11,8 @@ import RestaurantPage from "./pages/RestaurantPage";
 import EnterprisePage from "./pages/EnterprisePage";
 import EducationPage from "./pages/educationPage";
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",

@@ -1,0 +1,44 @@
+.smal-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.smal-card:hover {
+    background-color: #f0f0f0;
+    /* Mörkare bakgrund vid hover */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.smal-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+}
+
+.smal-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.smal-card li {
+    font-size: 0.875rem;
+    color: #424242;
+    margin-bottom: 0.25rem;
+}
+
+/* Responsivitet: extra luft på större skärmar */
+@media (min-width: 600px) {
+    .smal-card {
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
