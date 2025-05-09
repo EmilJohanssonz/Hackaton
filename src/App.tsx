@@ -12,9 +12,7 @@ import RestaurantPage from "./pages/RestaurantPage";
 import EnterprisePage from "./pages/EnterprisePage/EnterprisePage";
 import EducationPage from "./pages/EducationPage/EducationPage";
 
-
-
-
+        
 const router = createBrowserRouter([
   {
     path: "/",
