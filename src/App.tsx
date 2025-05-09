@@ -4,7 +4,7 @@ import "./App.css";
 import StartPage from "./pages/StartPage";
 import HomePage from "./pages/HomePage";
 import HealthcarePage from "./pages/HealthcarePage/HealthcarePage";
-import ShoppingPage from "./pages/Shopping";
+import ShoppingPage from "./pages/ShoppingPage/Shopping"
 import EventPage from "./pages/Event";
 import LokaliztionPage from "./pages/LokalizationPage";
 import RootLayout from "./components/layout/rootlayout";
