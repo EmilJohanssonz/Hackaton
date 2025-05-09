@@ -1,6 +1,6 @@
-import OptionCard from "../components/cards/OptionCard/OptionCard";
-import Footer from "../components/Nav";
-import Nav from "../components/Nav";
+import OptionCard from "../../components/cards/OptionCard/OptionCard";
+import Footer from "../../components/Nav";
+import Nav from "../../components/Nav";
 
 const EducationPage = () => {
   return (
