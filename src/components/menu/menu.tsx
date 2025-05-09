@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import "./_menu.scss";
-import logoHeader from "../../../public/Skarmbild_2025-05-07_160140.png";
 
 type MenuProps = {
   onMenuToggle: () => void;
@@ -22,7 +21,7 @@ export default function Menu({ onMenuToggle, isOpen }: MenuProps) {
       <nav className={`side-menu ${isOpen ? "open" : ""}`}>
         <div className="nav-header">
           <div className="nav-city-div">
-            <img className="city-logo" src={logoHeader} alt="City logo" />
+            <img className="city-logo" src="logo.png" alt="City logo" />
             <p>Bara i Borås</p>
           </div>
           <div>
