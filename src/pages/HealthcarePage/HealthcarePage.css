@@ -1,0 +1,90 @@
+/* Grundlayout för mobila enheter */
+.healthcare-container {
+    font-family: system-ui, sans-serif;
+    padding: 1rem;
+    background-color: #f9f9fb;
+    max-width: 100vw;
+}
+
+/* Header med ikon och titel */
+.healthcare-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 0.75rem;
+}
+
+/* Ikonruta */
+.icon-box {
+    background-color: #b63d2d;
+    border-radius: 0.75rem;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Titel och beskrivning */
+.header-text h1 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 0.75rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Sektioner: Vårdcentraler, Tandvård etc. */
+.category-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.category-section h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+/* Informationskort */
+.card {
+    border: 1px solid #e4e4e7;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover,
+.card:active {
+    background-color: #b12222;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transform: scale(1.02);
+    /* Mjukare än 1.2 */
+    color: #fff;
+}
+
+/* Text i kort */
+.card h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card p {
+    margin: 0.25rem 0 0;
+    font-size: 0.875rem;
+    color: #444;
+}
