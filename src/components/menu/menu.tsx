@@ -1,46 +1,100 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./_menu.scss";
-import { useState } from "react";
+import logoHeader from "../../../public/Skarmbild_2025-05-07_160140.png";
 
-export default function Menu() {
-  const [open, setOpen] = useState(false);
+type MenuProps = {
+  onMenuToggle: () => void;
+  isOpen: boolean;
+};
 
+export default function Menu({ onMenuToggle, isOpen }: MenuProps) {
   return (
     <>
       <img
         src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png"
         alt="Meny Button"
         className="meny"
-        onClick={() => setOpen(!open)}
+        onClick={onMenuToggle}
       />
 
-      {open && <div className="overlay" onClick={() => setOpen(false)}></div>}
+      {isOpen && <div className="overlay" onClick={onMenuToggle}></div>}
 
-      <nav className={`side-menu ${open ? "open" : ""}`}>
+      <nav className={`side-menu ${isOpen ? "open" : ""}`}>
+        <div className="nav-header">
+          <div className="nav-city-div">
+            <img className="city-logo" src={logoHeader} alt="City logo" />
+            <p>Bara i Borås</p>
+          </div>
+          <div>
+            <button className="close-btn" onClick={onMenuToggle}>
+              X
+            </button>
+          </div>
+        </div>
         <ul>
           <li>
-            <Link to="/home">Hem</Link>
+            <NavLink
+              to="/home"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Hem
+            </NavLink>
           </li>
           <li>
-            <Link to="/event">Evenemang</Link>
+            <NavLink
+              to="/event"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Evenemang
+            </NavLink>
           </li>
           <li>
-            <Link to="/resturanger/cafe">Restauranger</Link>
+            <NavLink
+              to="/restaurants/cafe"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Restauranger
+            </NavLink>
           </li>
           <li>
-            <Link to="/shopping">Shopping</Link>
+            <NavLink
+              to="/shopping"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Shopping
+            </NavLink>
           </li>
           <li>
-            <Link to="/utbildning">Utbildning</Link>
+            <NavLink
+              to="/education"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Utbildning
+            </NavLink>
           </li>
           <li>
-            <Link to="/företag">Företag</Link>
+            <NavLink
+              to="/enterprise"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Företag
+            </NavLink>
           </li>
           <li>
-            <Link to="/vård/hälsa">Vård & Hälsa</Link>
+            <NavLink
+              to="/healthcare"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Vård & Hälsa
+            </NavLink>
           </li>
           <li>
-            <Link to="/karta">Karta</Link>
+            <NavLink
+              to="/map"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Karta
+            </NavLink>
           </li>
         </ul>
       </nav>
